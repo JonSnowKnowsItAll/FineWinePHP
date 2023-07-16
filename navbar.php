@@ -1,3 +1,4 @@
+<!-- display navbar items -->
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <div class="container-fluid">
         <ul class="navbar-nav">
