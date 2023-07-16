@@ -7,9 +7,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 <body>
+<!-- including navbar here-->
 <?php require_once 'navbar.php'?>
 <main class="container">
     <div class="container p-5 my-5 border bg-light">
+        <!-- including db connection config, outsourced functions.php and pages -->
         <?php
         include 'config.php';
         include 'functions.php';
