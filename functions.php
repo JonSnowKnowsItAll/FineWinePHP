@@ -1,4 +1,5 @@
 <?php 
+//prepares and executes query with optionl array of values
 function makeStatement($query, $valueArray = null)
 {
     global $con;
@@ -7,6 +8,7 @@ function makeStatement($query, $valueArray = null)
     return $stmt;
 }
 
+//generates dynamic html table with query
 function showTable($query)
 {
     global $con;
