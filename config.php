@@ -1,15 +1,16 @@
 <?php
-$host_name = "localhost:port"; //Change port
-$database = "HowToBecomeKing"; // Change your database name
-$username = "JonSnow"; // Your database user id 
-$password = "Ghost"; // Your password
+$host_name = "localhost:port"; //server and port
+$database = "HowToBecomeKing"; //database 
+$username = "JonSnow"; //user id 
+$password = "Ghost"; //password
 
-
-//////// Do not Edit below /////////
-try {
-$con = new PDO('mysql:host='.$host_name.';dbname='.$database, $username, $password);
-} catch (PDOException $e) {
-print "Error!: " . $e->getMessage() . "<br/>";
-die();
+//opens connection to database with PDO API
+try 
+{
+  $con = new PDO('mysql:host='.$host_name.';dbname='.$database, $username, $password);
+} 
+catch (PDOException $e) {
+  print "Error!: " . $e->getMessage() . "<br/>";
+  die();
 }
 ?>
